@@ -22,7 +22,7 @@ Star schema — one fact table, four dimension tables.
 - `dim_customer` — customer to state/city
 - `dim_seller` — seller to state/city
 
-![Star Schema](screenshots/star_schema.png)
+![Star Schema](screenshots/Star_Schema.png)
 
 ## What I found
 - Computers & Accessories revenue: **~R$118K (Feb 2018) → ~R$51K (Jun 2018)**, a ~57% peak-to-trough drop, visible directly in the decomposition tree below
@@ -43,30 +43,28 @@ Covers: core aggregates (Total Revenue, Total Orders, Avg Order Value), time int
 ### Page 1 — Executive Overview
 Total Revenue, Total Orders, and Avg Order Value cards, a monthly revenue trend line with a native Power BI forecast overlay (3-month projection, 95% CI), and a category slicer to filter the whole page.
 
-![Executive Overview](screenshots/page1_executive_overview.png)
+![Executive Overview](screenshots/Executive_Overview.png)
 
 ### Page 2 — Root Cause Analysis
 A Decomposition Tree (Total Revenue → category → month) that lets you drill down live and land on the exact Feb→Jun 2018 pattern — you can see `computers_accessories` at 1,032,723.77 total, with the monthly breakdown branching out on the right.
 
-![Root Cause Decomposition Tree](screenshots/page2_root_cause_decomposition.png)
+![Root Cause Decomposition Tree](screenshots/Root_Cause_Decomposition.png)
 
 ### Page 3 — Drill-Through Detail
 A seller-level table (Revenue per Seller, Avg Review Score, Avg Delivery Delay) next to a scatter chart (review score vs. revenue, bubble size = delivery delay) — set up as an actual drill-through target from category selections elsewhere in the report.
 
-![Drill-Through Detail](screenshots/page3_drillthrough_detail.png)
+![Drill-Through Detail](screenshots/Drillthrough_Detail.png)
 
 ### Page 4 — Recommendations
 Three data-backed actions, each tied to a specific piece of evidence from the investigation, plus a supporting chart showing the review-score dip that Recommendation 1 is based on.
 
-![Recommendations](screenshots/page4_recommendations.png)
+![Recommendations](screenshots/Recommendations.png)
 
 ## Repo structure
 ```
 data/                          cleaned star-schema CSVs, ready to import
-docs/
   DAX_measures.md              every measure, with the real numbers they produce
   insight_report.md            full findings + recommendations
-  BUILD_GUIDE.md               step-by-step Power BI build instructions
 screenshots/                   all 4 report pages + model view
 sales_decline.pbix             the Power BI file — open in Power BI Desktop (free) to explore interactively
 project_walkthrough.mp4        2-minute video walkthrough
