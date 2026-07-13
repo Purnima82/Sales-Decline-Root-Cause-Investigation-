@@ -7,7 +7,6 @@ The Computers & Accessories category hit its highest monthly revenue ever in Feb
 
 ## Project walkthrough
 
-
 ## Dataset
 [Olist Brazilian E-Commerce Public Dataset](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce) — real transactional data from an actual Brazilian marketplace, ~100K orders, 2016–2018. Anonymized but not synthetic. Tables used: orders, order items, products, customers, sellers, reviews, payments, category translation.
 
