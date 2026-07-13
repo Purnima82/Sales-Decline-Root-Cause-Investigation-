@@ -6,7 +6,7 @@ Root-cause investigation of a real revenue decline in the Olist Brazilian e-comm
 The Computers & Accessories category hit its highest monthly revenue ever in February 2018, then dropped 57% over the next four months while the rest of the marketplace stayed flat or grew. This project investigates why, rules out the obvious explanations, and lands on the one the data actually supports.
 
 ## Project walkthrough
-*(2-minute video walkthrough — drag your `project_walkthrough.mp4` in right here while editing this README on GitHub)*
+
 
 ## Dataset
 [Olist Brazilian E-Commerce Public Dataset](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce) — real transactional data from an actual Brazilian marketplace, ~100K orders, 2016–2018. Anonymized but not synthetic. Tables used: orders, order items, products, customers, sellers, reviews, payments, category translation.
